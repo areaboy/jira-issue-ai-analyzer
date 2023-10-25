@@ -1,0 +1,39 @@
+modules:
+  jira:issuePanel:
+    - key: jira-issues-ai-analyzer-hello-world-panel
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: jira-issues-ai-analyzer
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build    
+app:
+  id: ari:cloud:ecosystem::app/70ada2cb-52f6-49a0-b82e-2cb6a81554d6
+permissions:
+  content:
+    styles:
+      - unsafe-inline
+    scripts:
+      - unsafe-inline
+      - unsafe-hashes
+      - unsafe-eval
+  scopes:
+      - read:jira-work
+      - storage:app
+      - write:jira-work
+      - read:jira-user
+  external:
+    scripts:
+        - https://code.jquery.com
+        - https://cdnjs.cloudflare.com
+    fetch:
+      client:
+        - https://nlapi.expert.ai
+        - https://developer.expert.ai
+        - https://api.openai.com

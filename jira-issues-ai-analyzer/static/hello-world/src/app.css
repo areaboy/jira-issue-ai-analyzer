@@ -1,0 +1,69 @@
+
+.acc{
+background-color: #ddd;
+color:black;
+//border-radius: 20%;
+border: none;
+//width:100%;
+}
+
+.time_css{
+font-size: 18px;
+color: #800000;
+}
+
+
+
+
+.ai_css{
+background:#ddd;
+color:black;
+padding:6px;
+cursor:pointer;
+border:none;
+border-radius:20%;
+font-size:18px;
+height:60px;
+}
+
+.ai_css:hover{
+background: orange;
+color:black;
+
+}
+
+
+.css_ai{
+background:#ddd;color:black;padding:6px;border:none;border-radius:25%;
+//margin: 0 1%;
+margin: 0.2%;
+  display: inline-block;
+}
+
+.css_ai:hover{
+background: orange;
+color:black;
+
+}
+
+
+.sentiment_css{
+background:#ccc;color:black;padding:6px;border:none;
+}
+
+.sentiment_css:hover{
+background: orange;
+color:black;
+
+}
+
+
+.chatgpt_ai{
+background:#ddd;color:black;padding:6px;border:none;
+}
+
+.chatgpt_ai:hover{
+background: orange;
+color:black;
+
+}
