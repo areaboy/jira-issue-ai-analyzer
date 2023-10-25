@@ -1,33 +1,35 @@
-# Forge Hello World
+# Jira Issues AI Analyzer
 
-This project contains a Forge app written in Javascript that displays `Hello World!` in a Jira issue panel. 
+An AI Tools that help Businesses, Companies etc. to Analyze, Translate, and Summarize Jira Issues powered by Expert.AI , ChatGPT AI, Forge Storage API. Forge Custom UI, Atlaskit Design and much more 
 
-See [developer.atlassian.com/platform/forge/](https://developer.atlassian.com/platform/forge) for documentation and tutorials explaining Forge.
-
-## Requirements
-
-See [Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/) for instructions to get set up.
 
 ## Quick start
+This application was built using **Forge Custom UI**
 
-- Install top-level dependencies:
-```
-npm install
-```
+This app was built based on this tutorial link https://developer.atlassian.com/platform/forge/build-a-custom-ui-app-in-jira/
 
-- Install dependencies inside of the `static/hello-world` directory:
-```
-npm install
-```
+Once You downloaded the app.  At root directory, open **manifest.yml** files  and remove this script line of code below. You do not need it. 
 
-- Modify your app by editing the files in `static/hello-world/src/`.
-
-- Build your app (inside of the `static/hello-world` directory):
 ```
-npm run build
+scripts:
+        - https://code.jquery.com
+        - https://cdnjs.cloudflare.com`
 ```
+        Once you are done, Save the manifest.
 
-- Deploy your app by running:
+        
+- its time Build your app.  Now navigate to `static/hello-world` directory
+ First run 
+**npm install** to install all application dependency files
+
+  then run
+
+  **npm run build**   to build your app
+
+
+
+
+- Deploy your app by running the code from the root directory of your application:
 ```
 forge deploy
 ```
@@ -42,6 +44,30 @@ forge install
 - Use the `forge install` command when you want to install the app on a new site.
 - Once the app is installed on a site, the site picks up the new app changes you deploy without needing to rerun the install command.
 
+  ### Additional  info.
+  Here is list of packages I installed at `static/hello-world` directory:  for application design.You don't need to install them.
+  The application will install it for you automatically when you run **npm install** command above.  I just listed it here for reference purposes.
+  
+npm i @atlaskit/form  
+
+npm i @atlaskit/textarea 
+
+npm i @atlaskit/textfield  
+
+npm i @atlaskit/button  
+
+npm i @atlaskit/inline-message 
+
+npm i form-data  
+
+npm i @atlaskit/tabs  
+
+npm i @atlaskit/select
+
+npm i @atlaskit/radio
+
+npm install jquery --save
+
 ## Support
 
-See [Get help](https://developer.atlassian.com/platform/forge/get-help/) for how to get help and provide feedback.
+See [Get https://fredjarsoft.com/contact.html) for how to get help and provide feedback.
